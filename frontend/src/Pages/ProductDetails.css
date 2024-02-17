@@ -1,0 +1,21 @@
+.Singleproduct_carddata {
+  margin: 40px;
+  background-color: rgb(234, 240, 244);
+  display: flex;
+}
+@media (max-width: 770px) {
+  .Singleproduct_carddata {
+    display: block;
+  }
+}
+
+.singleproduct_img {
+    padding: 30px;
+  }
+  @media (max-width: 950px) {
+    .singleproduct_img {
+      padding: 0px;
+    }
+  }
+
+  
