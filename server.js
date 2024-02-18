@@ -40,7 +40,7 @@ app.use("/api", productRoute);
 app.use(cors());
 app.use(express.json());
 app.use(morgan("dev"));
-app.use(express.static(path.join(__dirname, "./frontend/build")));
+app.use(express.static(path.join(__dirname, "./frontend/public")));
 
 // app.get("/", (req, res) => {
 //   res.send({
@@ -48,7 +48,7 @@ app.use(express.static(path.join(__dirname, "./frontend/build")));
 //   });
 // });
 app.use("*", function (req, res) {
-  res.sendFile(path.join(__dirname, "./frontend/build/index.html"));
+  res.sendFile(path.join(__dirname, "./frontend/public/index.html"));
 });
 //Port
 const PORT = process.env.PORT || 8080;
