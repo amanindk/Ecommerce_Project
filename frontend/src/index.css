@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Page not found------------------ */
+.pnf {
+  display: flex;
+  min-height: 65vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pnf-title {
+  font-size: 100px;
+  font-weight: 700;
+  color: #cf3132;
+}
+
+.pnf-heading {
+  font-weight: normal;
+}
+
+.pnf-btn {
+  color: #cf3132;
+  border: 1px solid #cf3132;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 10px;
+}
+.pnf-btn:hover {
+  background-color: #cf3132;
+  color: white;
+}
+
+/*  product-link---------------------*/
+.product-link {
+  text-decoration: none !important;
+  color: black;
+}
+.product-card {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  /* margin: 20px 70px; */
+  gap: 20px;
+  /* row-gap: 10px; */
+}
+.card {
+  width: 220px;
+}
+@media (max-width: 1250px) {
+  .product-card {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* margin: 20px 70px; */
+    gap: 20px;
+    /* row-gap: 10px; */
+  }
+  .card {
+    width: 220px;
+  }
+}
+@media (max-width: 950px) {
+  .product-card {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 20px 70px;
+    gap: 20px;
+    /* row-gap: 10px; */
+  }
+  .card {
+    width: 230px;
+  }
+}
+@media (max-width: 765px) {
+  .product-card {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 20px 90px;
+    gap: 20px;
+    /* row-gap: 10px; */
+  }
+  .card {
+    width: 240px;
+  }
+}
+@media (max-width: 590px) {
+  .product-card {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 20px 50px;
+    gap: 20px;
+    /* row-gap: 10px; */
+  }
+}
+@media (max-width: 540px) {
+  .product-card {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 20px 20px;
+    gap: 20px;
+    /* row-gap: 10px; */
+  }
+  .card {
+    width: 230px;
+  }
+}
+@media (max-width: 495px) {
+  .product-card {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 20px 10px;
+    gap: 20px;
+  }
+  .card {
+    width: 210px;
+  }
+}
+@media (max-width: 455px) {
+  .product-card {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 20px 20px;
+    gap: 20px;
+  }
+  .card {
+    width: 190px;
+  }
+}
+@media (max-width: 415px) {
+  .product-card {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 20px 20px;
+    gap: 20px;
+  }
+  .card {
+    width: 170px;
+  }
+}
+
+/*like and unlike */
+.unliked {
+  color: rgb(179, 174, 174); /* Default color for unliked state */
+  cursor: pointer;
+  transition: color 0.3s; /* Smooth transition for color change */
+  margin: 10px;
+}
+
+.liked {
+  color: red;
+  cursor: pointer;
+  transition: color 0.3s; /* Smooth transition for color change */
+  margin: 10px;
+}
