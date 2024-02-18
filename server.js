@@ -4,19 +4,19 @@ import dotenv from "dotenv";
 import morgan from "morgan";
 import connectDB from "./config/db.js";
 import router from "./routes/authRoute.js";
-import cors from "cors";
-import bodyParser from "body-parser";
+// import bodyParser from "body-parser";
 import categoryRoute from "./routes/categoryRoute.js";
 import productRoute from "./routes/productRoute.js";
 import path from "path";
+import cors from "cors";
 import { fileURLToPath } from "url";
 import { dirname } from "path";
 
 //rest api
 const app = express();
 // const path = require("path");
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({ extended: true }));
+// app.use(bodyParser.json());
 
 // app.get("/", (req, res) => {
 //   app.use(express.static(path.resolve(__dirname, "frontend", "dev")));
