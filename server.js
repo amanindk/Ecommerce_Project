@@ -30,7 +30,7 @@ connectDB();
 
 //esmodule fix
 const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename)
+const __dirname = path.dirname(__filename);
 //routes
 app.use("/api", router);
 app.use("/api", categoryRoute);
@@ -40,15 +40,21 @@ app.use("/api", productRoute);
 app.use(cors());
 app.use(express.json());
 app.use(morgan("dev"));
-app.use(express.static(path.join(__dirname, "./frontend/public")));
+// app.use(express.static(path.join(__dirname, "./frontend/build")));
+app.use(express.static(path.join(__dirname, 'frontend', 'build')));
 
 // app.get("/", (req, res) => {
 //   res.send({
 //     message: "Welcome to Dial2shop",
 //   });
 // });
-app.use("*", function (req, res) {
-  res.sendFile(path.join(__dirname, "./frontend/public/index.html"));
+
+// app.use("*", function (req, res) {
+//   res.sendFile(path.join(__dirname, "./frontend/build/index.html"));
+// });
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'frontend', 'build', 'index.html'));
 });
 //Port
 const PORT = process.env.PORT || 8080;
