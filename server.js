@@ -15,7 +15,7 @@ import { fileURLToPath } from "url";
 //rest api
 const app = express();
 // const path = require("path");
-const express = require('express');
+// const express = require('express');
 // app.use(bodyParser.urlencoded({ extended: true }));
 // app.use(bodyParser.json());
 
