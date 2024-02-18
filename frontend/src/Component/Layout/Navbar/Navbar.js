@@ -139,7 +139,7 @@ function Navbarr() {
                       <>
                         {" "}
                         <Link to="/register" className="login">
-                          <span>Login/Register</span>
+                          <span>Login//Register</span>
                         </Link>
                       </>
                     ) : (
