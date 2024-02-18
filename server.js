@@ -18,11 +18,6 @@ const app = express();
 // app.use(bodyParser.urlencoded({ extended: true }));
 // app.use(bodyParser.json());
 
-// app.get("/", (req, res) => {
-//   app.use(express.static(path.resolve(__dirname, "frontend", "dev")));
-//   res.sendFile(path.resolve(__dirname, "frontend", "dev", "index.html"));
-// });
-
 //configure env
 dotenv.config();
 
@@ -53,6 +48,15 @@ app.use(express.static(path.join(__dirname, "./frontend/build")));
 app.use("*", function (req, res) {
   res.sendFile(path.join(__dirname, "./frontend/build/index.html"));
 });
+
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "frontend", "build", "index.html"));
+});
+
+// app.get("/", (req, res) => {
+//   app.use(express.static(path.resolve(__dirname, "frontend", "dev")));
+//   res.sendFile(path.resolve(__dirname, "frontend", "dev", "index.html"));
+// });
 
 //Port
 const PORT = process.env.PORT || 8080;
