@@ -10,7 +10,7 @@ import productRoute from "./routes/productRoute.js";
 import path from "path";
 import cors from "cors";
 import { fileURLToPath } from "url";
-import { dirname } from "path";
+// import { dirname } from "path";
 
 //rest api
 const app = express();
