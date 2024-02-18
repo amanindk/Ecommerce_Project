@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bd40e4b5.css",
+    "main.js": "/static/js/main.6bc7adc8.js",
+    "static/js/787.9e9f4ffd.chunk.js": "/static/js/787.9e9f4ffd.chunk.js",
+    "static/media/Dail2shop.png": "/static/media/Dail2shop.ef1eb9dd7ab4c84f1fec.png",
+    "index.html": "/index.html",
+    "main.bd40e4b5.css.map": "/static/css/main.bd40e4b5.css.map",
+    "main.6bc7adc8.js.map": "/static/js/main.6bc7adc8.js.map",
+    "787.9e9f4ffd.chunk.js.map": "/static/js/787.9e9f4ffd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bd40e4b5.css",
+    "static/js/main.6bc7adc8.js"
+  ]
+}
