@@ -78,7 +78,6 @@ function ProductDetails() {
             alt={product.name}
             style={{ width: "200px", height: "200px" }}
           />
-          
         </div>
         <div className="col-md-6 p-3">
           <h1 className="text-center">Product Details</h1>
@@ -135,8 +134,8 @@ function ProductDetails() {
         </div>
       </div>
       <hr />
-      <div className="row">
-        <h6>Similar Products</h6>
+      <div className="row mx-3">
+        <h3>Similar Products</h3>
         {relatedProducts.length < 1 && (
           <h6 className="text-center">No Similar Products Found</h6>
         )}

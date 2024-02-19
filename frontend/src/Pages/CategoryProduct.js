@@ -60,7 +60,7 @@ function CategoryProduct() {
           {" "}
           <div className="product-card">
             {products?.map((p) => (
-              <div className="card" key={p._id}>
+              <div className="border p-2 box-shadow" key={p._id}>
                 <FaHeart
                   className={isProductInWishlist(p._id) ? "liked" : "unliked"}
                   onClick={() => addToWishlist(p)}

@@ -4,10 +4,12 @@ import { useSearch } from "../Context/search";
 import { useNavigate } from "react-router-dom";
 import { FaHeart } from "react-icons/fa";
 import { useWish } from "../Context/wish";
+import { useCart } from "../Context/cart";
 import toast from "react-hot-toast";
 
 function Search() {
   const navigate = useNavigate();
+  const [cart, setCart] = useCart();
   const [values, setValues] = useSearch();
   const [wish, setWish] = useWish();
 
@@ -34,9 +36,9 @@ function Search() {
   return (
     <Layout title={"Search results"}>
       <div className="container">
-        <div className="text-center">
-          <h1>Search Results</h1>
-          <h6>
+        <div>
+          <h1 className="text-center">Search Results</h1>
+          <h6 className="text-center">
             {values?.results.length < 1
               ? "No Products Found"
               : `Found${values?.results.length}`}
@@ -48,7 +50,7 @@ function Search() {
               //   key={p._id}
               //   className="product-link"
               // >
-              <div className="card" key={p._id}>
+              <div className="border p-2 box-shadow" key={p._id}>
                 <FaHeart
                   className={isProductInWishlist(p._id) ? "liked" : "unliked"}
                   onClick={() => addToWishlist(p)}
@@ -70,7 +72,19 @@ function Search() {
                   >
                     View
                   </button>
-                  <button className="btn btn-secondary ms-1">Add Cart</button>
+                  <button
+                    className="btn btn-secondary ms-1"
+                    onClick={() => {
+                      setCart([...cart, p]);
+                      localStorage.setItem(
+                        "cart",
+                        JSON.stringify([...cart, p])
+                      );
+                      toast.success("Item Added to Cart");
+                    }}
+                  >
+                    Add Cart
+                  </button>
                 </div>
               </div>
               // </Link>
