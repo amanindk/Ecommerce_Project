@@ -155,3 +155,8 @@
   transition: color 0.3s; /* Smooth transition for color change */
   margin: 10px;
 }
+  @media (max-width: 768px) {
+    .filter {
+      display: none;
+    }
+  }

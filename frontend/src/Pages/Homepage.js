@@ -8,6 +8,7 @@ import { useCart } from "../Context/cart";
 import toast from "react-hot-toast";
 import { FaHeart } from "react-icons/fa";
 import { useWish } from "../Context/wish";
+import Carausel from "../Component/Carausel/Carausel";
 
 function Homepage() {
   const [cart, setCart] = useCart();
@@ -138,9 +139,10 @@ function Homepage() {
   };
   return (
     <Layout title={"All product Best Offer "}>
+      <Carausel />
       <div className="row">
-        <div className="col-md-3">
-          <h4 className="text-center ">Filter By Category</h4>
+        <div className="col-md-3 filter">
+          <h4 className="text-center mt-5">Filter By Category</h4>
           <div className="d-flex flex-column ms-3">
             {categories?.map((c) => (
               <Checkbox
@@ -177,7 +179,7 @@ function Homepage() {
           <h1 className="text-center">All Product</h1>
           <div className="product-card">
             {products?.map((p) => (
-              <div className="card"  key={p._id}>
+              <div className="card" key={p._id}>
                 <FaHeart
                   className={isProductInWishlist(p._id) ? "liked" : "unliked"}
                   onClick={() => addToWishlist(p)}
