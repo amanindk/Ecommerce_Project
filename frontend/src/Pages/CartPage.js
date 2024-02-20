@@ -14,7 +14,7 @@ function CartPage() {
   const [auth, setAuth] = useAuth();
   const [clientToken, setClientToken] = useState("");
   const [instance, setInstance] = useState("");
-  const [loading, setLoading] = useState(false);
+  const [ loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
   //Total price
