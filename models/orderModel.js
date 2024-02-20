@@ -19,7 +19,7 @@ const orderSchema = new mongoose.Schema(
       enum: ["Not Process", "Processing", "Delivered", "Cancelled", "Shipped"],
     },
   },
-  { timestamps : true }
+  { timestamps: true }
 );
 
 export default mongoose.model("Order", orderSchema);

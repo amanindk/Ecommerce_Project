@@ -16,6 +16,7 @@ const app = express();
 // const path = require("path");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+// app.use(bodyParser.json({ limit: '50mb' })); 
 
 // app.get("/", (req, res) => {
 //   app.use(express.static(path.resolve(__dirname, "frontend", "dev")));
