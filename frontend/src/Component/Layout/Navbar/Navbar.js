@@ -3,6 +3,7 @@ import "./Navbar.css";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import amantra_logo from "./amantra_logo.png"
 import Dial2shop from "./Dail2shop.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-router-dom";
@@ -36,7 +37,7 @@ function Navbarr() {
       <Navbar expand="lg" className=" sticky-top  bg-body-tertiary">
         <Container fluid>
           <Link to="/">
-            <img src={Dial2shop} alt="" style={{ height: "53px" }} />
+            <img src={amantra_logo} alt="" style={{ height: "53px" }} />
           </Link>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
