@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import amantra_logo from "./amantra_logo.png"
-import Dial2shop from "./Dail2shop.png";
+// import Dial2shop from "./Dail2shop.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-router-dom";
 import { IoCartOutline } from "react-icons/io5";
