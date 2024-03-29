@@ -18,10 +18,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 // app.use(bodyParser.json({ limit: '50mb' }));
 
-// app.get("/", (req, res) => {
-//   app.use(express.static(path.resolve(__dirname, "frontend", "dev")));
-//   res.sendFile(path.resolve(__dirname, "frontend", "dev", "index.html"));
-// });
+
 
 //configure env
 dotenv.config();
